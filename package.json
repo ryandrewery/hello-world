@@ -1,0 +1,17 @@
+{
+  "name": "emu-migration",
+  "version": "1.0.0",
+  "description": "A tool for managing a migration from a PostgreSQL database to a MySQL database using the EMU method",
+  "main": "emu-migration/index.ts",
+  "scripts": {
+    "start": "node emu-migration/index.ts",
+    "test": "jest emu-migration/test.ts"
+  },
+  "dependencies": {
+    "mysql2": "^2.3.0",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}

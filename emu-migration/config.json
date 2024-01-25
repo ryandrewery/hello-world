@@ -1,0 +1,38 @@
+{
+  "source": {
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "postgres",
+    "database": "old_db"
+  },
+  "target": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "root",
+    "database": "new_db"
+  },
+  "mapping": {
+    "schema1": "table1",
+    "schema2": "table2",
+    "schema3": "table3"
+  },
+  "validation": {
+    "table1": {
+      "id": "unique",
+      "name": "not null",
+      "age": "positive"
+    },
+    "table2": {
+      "id": "unique",
+      "title": "not null",
+      "content": "not empty"
+    },
+    "table3": {
+      "id": "unique",
+      "category": "not null",
+      "price": "positive"
+    }
+  }
+}
